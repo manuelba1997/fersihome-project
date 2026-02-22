@@ -1,0 +1,98 @@
+
+/* 1) Use a more intuitive box model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2) Remove default margins */
+* {
+  margin: 0;
+}
+
+/* 3) Improve text rendering + set full-height layout */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* 4) Media elements behave predictably */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5) Form elements inherit typography */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* 6) Prevent textarea resize from breaking layouts (optional) */
+textarea {
+  resize: vertical;
+}
+
+/* 7) Long words won't overflow */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8) Remove default list styles (you can re-enable per component) */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* 9) Links: inherit color by default */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 10) Buttons: make them consistent */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* 11) Tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 12) Accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
