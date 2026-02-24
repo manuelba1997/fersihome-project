@@ -1,0 +1,18 @@
+
+
+.disable {
+    display: none;
+}
+
+/*Navbar movile design*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-navy);
+    color:var(--white);
+}
+.navbar div:nth-last-of-type(1) {
+    display: none;
+}
