@@ -9,10 +9,56 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
     background-color: var(--primary-navy);
     color:var(--white);
+ 
 }
-.navbar div:nth-last-of-type(1) {
-    display: none;
+/*Hamburguer menu*/
+
+.hamburger-menu{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.bar{
+    display: block;
+    width: 24px;
+    height: 2px;
+    gap: 6px;
+    background-color:var(--white);;
+    margin-bottom: 5px;
+    transition: transform ease 0.3s;
+}
+.active .bar:nth-child(1) {
+  opacity: 0;
+}
+.active .bar:nth-child(2) {
+   
+    transform: translateY(3px) rotate(45deg);
+}
+.active .bar:nth-child(3) {
+    transform: translateY(-4px) rotate(-45deg);
+}
+
+.nav-menu{
+ 
+    width: 100%;
+    background-color: var(--primary-navy);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 6%;
+    transition: all ease 0.3s;
+}
+.nav-menu li {
+    padding: 2rem 2rem;
+    font-size: 1.5rem;
+}
+
+/*Hamburguer menu End*/
