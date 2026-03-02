@@ -44,7 +44,11 @@
     transform: translateY(-4px) rotate(-45deg);
 }
 
-.nav-menu{
+.nav-menu {
+    display: none;
+}
+
+ .activated{
  
     width: 100%;
     background-color: var(--primary-navy);
@@ -53,7 +57,7 @@
     position: fixed;
     justify-content: center;
     align-items: center;
-    top: 6%;
+    top: 8%;
     transition: all ease 0.3s;
 }
 .nav-menu li {
