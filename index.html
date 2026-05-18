@@ -4,34 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <title>Fersi Home Improvement | Tampa Remodeling</title>
 </head>
 <body>
     <main>
         <nav class="navbar">
-            <div><img src="assets/icons/Fersi-logo-white.svg" alt=""></div>
+            <a class="brand" href="index.html" aria-label="Fersi Home Improvement home">
+                <img src="assets/icons/Fersi-logo-white.svg" alt="Fersi Home Improvement">
+            </a>
             <ul class="nav-menu">
-                <li>Services</li>
-                <li>Galery</li>
-                <li>About Us</li>
-                <li>Contact</li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="hamburger-menu">
+            <button class="hamburger-menu" type="button" aria-label="Open navigation menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
-            <div class="disable">
-                <button>Call US</button>
-                <button>Get Started</button>
+            </button>
+            <div class="nav-actions">
+                <a class="button button-secondary" href="contact.html">Call Us</a>
+                <a class="button button-primary" href="contact.html">Get Started</a>
             </div>
         </nav>
-        <section>
+        <section class="hero">
             <h1>Premium Remodeling & Property Improvements in Tampa</h1>
-            <h3>Helping Tampa homeowners increase property value with high-quality remodeling and improvement services.</h3>
-            <div>
-                <button>Call US</button>
-                <button>Get Started</button>
+            <p>Helping Tampa homeowners increase property value with high-quality remodeling and improvement services.</p>
+            <div class="hero-actions">
+                <a class="button button-secondary" href="contact.html">Call Us</a>
+                <a class="button button-primary" href="contact.html">Get Started</a>
             </div>
         </section>
     </main>

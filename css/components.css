@@ -1,19 +1,19 @@
-
-
-.disable {
-    display: none;
-}
-
-/*Navbar movile design*/
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--primary-navy);
-    color:var(--white);
- 
+    color: var(--white);
+    min-height: 72px;
+    padding: 0 1.25rem;
+    position: relative;
+    z-index: 10;
 }
-/*Hamburguer menu*/
+
+.brand img {
+    width: 112px;
+    height: auto;
+}
 
 .hamburger-menu{
     width: 44px;
@@ -22,24 +22,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 4px;
 }
 
 .bar{
     display: block;
     width: 24px;
     height: 2px;
-    gap: 6px;
-    background-color:var(--white);;
+    background-color: var(--white);
     margin-bottom: 5px;
     transition: transform ease 0.3s;
 }
+
+.bar:last-child {
+    margin-bottom: 0;
+}
+
 .active .bar:nth-child(1) {
   opacity: 0;
 }
+
 .active .bar:nth-child(2) {
-   
     transform: translateY(3px) rotate(45deg);
 }
+
 .active .bar:nth-child(3) {
     transform: translateY(-4px) rotate(-45deg);
 }
@@ -48,8 +54,7 @@
     display: none;
 }
 
- .activated{
- 
+.nav-menu.activated{
     width: 100%;
     background-color: var(--primary-navy);
     display: flex;
@@ -57,12 +62,63 @@
     position: fixed;
     justify-content: center;
     align-items: center;
-    top: 8%;
+    top: 72px;
+    left: 0;
     transition: all ease 0.3s;
 }
+
 .nav-menu li {
-    padding: 2rem 2rem;
+    padding: 1.5rem 2rem;
     font-size: 1.5rem;
 }
 
-/*Hamburguer menu End*/
+.nav-menu a {
+    display: inline-block;
+}
+
+.nav-actions {
+    display: none;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.button-primary {
+    background-color: var(--accent-gold);
+    color: var(--primary-navy);
+}
+
+.button-secondary {
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    color: var(--white);
+}
+
+@media (min-width: 768px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .nav-menu li {
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+}
